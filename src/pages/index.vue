@@ -1,4 +1,6 @@
 <script setup lang="ts" generic="T extends any, O extends any">
+import { Icon } from '@iconify/vue'
+
 defineOptions({
   name: 'IndexPage',
 })
@@ -14,10 +16,13 @@ function go() {
 
 <template>
   <div>
-    <div i-carbon-campsite inline-block text-4xl />
+    <!-- <div i-carbon-campsite inline-block text-4xl /> -->
+    <div class="text-center flex justify-center">
+      <Icon class="text-4xl" icon="dashicons:admin-generic" />
+    </div>
     <p>
       <a rel="noreferrer" href="https://github.com/antfu/vitesse-lite" target="_blank">
-        Vitesse Lite
+        Vitesse Lite Test
       </a>
     </p>
     <p>
